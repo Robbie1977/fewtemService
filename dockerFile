@@ -1,0 +1,6 @@
+FROM fewtrem/dockertest
+
+COPY load.sh /app/load.sh
+RUN chmod +x /app/load.sh
+
+ENTRYPOINT ['/app/load.sh']
